@@ -94,7 +94,7 @@ menu ul li a:hover{
   <div class="form-group">
     <label for="ststicDate" class="col-sm-4 col-form-label">Date</label>
     <div class="col-sm-8">
-      <input type="text" class="form-control" placeholder="dd/mm/yy" id="date">
+      <input type="text" class="form-control" placeholder="dd/mm/yy" name="date">
   
 </div>
 </div>

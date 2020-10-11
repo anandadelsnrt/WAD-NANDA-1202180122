@@ -21,7 +21,7 @@
     $phone = $_GET['phone'];
     $service_count = count($_GET['add']);
 
-    $checkout =  date('m/d/y', strtotime($check . ' + ' . $_GET['duration'] . 'days'));
+    $checkout =  date('m/d/y', strtotime($check . ' + ' . $_POST['duration'] . 'days'));
 
     $totalPrice = $service_count * 20;
     ?>

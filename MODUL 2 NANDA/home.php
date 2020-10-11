@@ -77,7 +77,7 @@ menu ul li a:hover{
           </ul>
           <div class="card-footer text-muted"> 
           <?php $tipekamar = 'Standard';?>
-            <a href="Booking.php?tipekamar=<?php echo $tipekamar; ?>" class="btn btn-primary" role="button">Book Now</a>
+            <a href="" class="btn btn-primary" role="button">Book Now</a>
         </div> </div>     
     </div></div></div></div>
 
