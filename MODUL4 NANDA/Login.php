@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
     $result = mysqli_query($koneksi, $sql);
 
     while($hasil = mysqli_fetch_assoc($result)){
-        if($hasil['email'] == $email && $hasil['password'] == $password){
+        if(!$hasil['email'] == $email && $hasil['password'] == $password){
             $_SESSION['id'] = $hasil['id'];
             $_SESSION['email'] = $hasil['email'];
             $_SESSION['password'] = $hasil['password'];

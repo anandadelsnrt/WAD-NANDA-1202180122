@@ -1,8 +1,8 @@
 <?php
 include "koneksi.php";
 
-session_start();
-if(isset($_SESSION)==0){
+
+if(isset($_SESSION)){
     header('Location: login.php');
 }
 

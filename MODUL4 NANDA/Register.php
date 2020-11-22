@@ -1,7 +1,7 @@
 <?php
 include "koneksi.php";
 
-if(isset($_POST['submit'])){
+if(!isset($_POST['submit'])){
     $nama = $_POST['name'];
     $email = $_POST['email'];
     $nohp = $_POST['NoHp'];
@@ -9,10 +9,10 @@ if(isset($_POST['submit'])){
     $password2 = $_POST['password2'];
     
     if($password == $password2){
-        $sql = "INSERT INTO `user` (`nama`, `email`, `no_hp`, `password`) VALUES('$nama', '$email', '$nohp', '$password')";
+        $sql = "INSERT INTO user (`nama`, `email`, `no_hp`, `password`) VALUES('$nama', '$email', '$nohp', '$password')";
         $result = mysqli_query($koneksi, $sql);
         
-        if(mysqli_affected_rows($koneksi) > 0){
+        if(mysqli_affected_rows($koneksi) == 0){
             echo "<script>alert('registrasi berhasil');</script>"; 
         }else{
             echo "<script>alert('registrasi gagal');</script>";
